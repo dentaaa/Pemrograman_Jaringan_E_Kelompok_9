@@ -45,7 +45,7 @@ class GUI:
         self.Window = tk.Tk()
         self.Window.withdraw()
 
-        self.login = tk.Toplevel(self.Window, "#DEB887")
+        self.login = tk.Toplevel()
 
         self.login.title("Login")
         self.login.resizable(width=False, height=False)
@@ -112,9 +112,9 @@ class GUI:
         self.Window.title("CHATROOM")
         self.Window.resizable(width=False, height=False)
         self.Window.configure(width=470, height=550,
-                              bg="#44ab60")  # warna ga guna
+                              bg="#696969")  # warna ga guna
         self.chatBoxHead = tk.Label(self.Window,
-                                    bg="#44ab60",  # warna header
+                                    bg="#696969",  # warna header
                                     fg="#EAECEE",
                                     text=self.name,
                                     font="Helvetica 11 bold",
@@ -129,7 +129,7 @@ class GUI:
         self.textCons = tk.Text(self.Window,
                                 width=20,
                                 height=2,
-                                bg="#17202A",  # warna background chat gede
+                                bg="#DEB887",  # warna background chat gede
                                 fg="#3c7859",  # font color
                                 font="Helvetica 11",
                                 padx=5,
@@ -138,14 +138,14 @@ class GUI:
         self.textCons.place(relheight=0.745, relwidth=1, rely=0.08)
 
         self.labelBottom = tk.Label(
-            self.Window, bg="#533269", height=80)  # warna outer input text
+            self.Window, bg="#696969", height=80)  # warna outer input text
 
         self.labelBottom.place(relwidth=1,
                                rely=0.8)
 
         self.entryMsg = tk.Entry(self.labelBottom,
-                                 bg="#2C3E50",  # warna input kalimat
-                                 fg="#EAECEE",  # warna font input kalimat
+                                 bg="#CD853F",  # warna input kalimat
+                                 fg="#000000",  # warna font input kalimat
                                  font="Helvetica 11")
         self.entryMsg.place(relwidth=0.74,
                             relheight=0.03,
@@ -164,15 +164,15 @@ class GUI:
                              relheight=0.03,
                              relwidth=0.22)
 
-        self.labelFile = tk.Label(self.Window, bg="#ABB2B9", height=70)
+        self.labelFile = tk.Label(self.Window, bg="#696969", height=70)
 
         self.labelFile.place(relwidth=1,
                              rely=0.9)
 
         self.fileLocation = tk.Label(self.labelFile,
                                      text="Choose file to send",
-                                     bg="#2C3E50",  # warna background tulisan location file
-                                     fg="#EAECEE",  # warna font tulisan location file
+                                     bg="#CD853F",  # warna background tulisan location file
+                                     fg="#000000",  # warna font tulisan location file
                                      font="Helvetica 11")
         self.fileLocation.place(relwidth=0.65,
                                 relheight=0.03,
